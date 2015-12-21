@@ -1,0 +1,23 @@
+// Screen
+// ======
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/header";
+@import "landing/hero";
+@import "landing/intro";
+@import "landing/features";
+@import "landing/portfolio";
+@import "landing/contact-us";
+@import "layout/footer";
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 15px;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+  height:auto;
+}

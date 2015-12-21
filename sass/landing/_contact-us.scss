@@ -1,0 +1,112 @@
+.contact-us{
+  overflow:hidden;
+  min-height: 350px;
+  background-image:url("../images/contact-bg.png");
+  background-size: cover;
+  text-align: center;
+  color:#fff;
+  .opacity-bg{
+  background: rgba(45,57,80, 0.8);
+  }
+  .section-title{
+    margin:30px 0 10px;
+    font-size: 20px;
+  }
+  h5{
+    margin-bottom: 15px;
+    color: #999;
+    font-size: 12px;
+  }
+  form{
+    width:100%;
+    input{
+      width:100%;
+      height: 33px;
+      margin-bottom:10px;
+      border: 1px solid #999;
+      border-radius: 2px;
+      background: transparent;
+      &:focus{
+        color:#fff;
+      }
+      @include input-placeholder{
+        padding:1px;
+        color: #999;
+        font-family: "Lato", sans-serif;
+        font-size: 10px;
+      }
+      @media screen and (min-width: 591px){
+        width:560px;
+        @include input-placeholder{
+          font-family: "Lato", sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+    textarea{
+      width:100%;
+      height: 100px;
+      border: 1px solid #999;
+      border-radius: 2px;
+      background: transparent;
+      font-family: "Lato", sans-serif;
+      font-size: 10px;
+      &:focus{
+        color:#fff;
+        font-size: 14px;
+      }
+      @include input-placeholder{
+        padding:3px;
+        color: #999;
+        font-family: "Lato", sans-serif;
+        font-size: 10px;
+      }
+      @media screen and (min-width: 591px){
+        width:560px;
+        @include input-placeholder{
+          padding:3px;
+          color: #999;
+          font-family: "Lato", sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+    label{
+      display:inline-block;
+      margin-top:10px;
+      font-size: 10px;
+      #newsletter-subscribe{
+        width:17px;
+        height:17px;
+        margin-top: 8px;
+        }
+      @media screen and (min-width: 591px){
+        float:left;
+      }
+      }
+     @media screen and (min-width: 591px){
+      width:560px;
+      margin:0 auto;
+      }
+    }
+    .submit{
+      display:block;
+      margin:10px auto;
+      width: 146px;
+      height: 51px;
+      border: 1px solid #15a4fa;
+      border-radius: 2px;
+      background: transparent;
+      color: white;
+      font-size: 18px;
+      transition:0.4s ease;
+      &:hover{
+        background-color: #15a4fa;
+      }
+      @media screen and (min-width: 591px){
+        float:right;
+        margin-bottom:100px;
+      }
+
+    }
+  }
