@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 /*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -12,7 +14,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  font: 15px "Lato", sans-serif;
+  font: 14px 'Open Sans', sans-serif;
   background: #fff;
   color: #000;
 }
@@ -27,7 +29,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 /* line 12, ../sass/_reset.scss */
 select, input, textarea {
-  font-size: 15px;
+  font-size: 14px;
   vertical-align: middle;
 }
 
@@ -59,7 +61,7 @@ table {
 
 /* line 18, ../sass/_reset.scss */
 a:link, a:visited {
-  font: 15px "Lato", sans-serif;
+  font: 14px 'Open Sans', sans-serif;
   color: #4C8BBF;
   text-decoration: none;
 }
@@ -69,37 +71,22 @@ a:hover {
   text-decoration: none;
 }
 
-/* line 1, ../sass/layout/_header.scss */
-header {
-  height: 99px;
-  background-color: #f6f9f9;
-  text-align: center;
-}
-/* line 5, ../sass/layout/_header.scss */
-header .logo {
-  display: inline-block;
-  margin-top: 30px;
-  text-transform: uppercase;
-  color: #2d3950;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 20px;
+/* line 2, ../sass/layout/_header.scss */
+header .top-headerline {
+  height: 5px;
+  background-color: #d11f2d;
 }
 @media screen and (min-width: 768px) {
-  /* line 5, ../sass/layout/_header.scss */
-  header .logo {
-    float: left;
-    margin-left: 40px;
+  /* line 2, ../sass/layout/_header.scss */
+  header .top-headerline {
+    height: 10px;
   }
 }
-/* line 17, ../sass/layout/_header.scss */
-header .logo img {
-  float: left;
-  margin-right: 15px;
-}
-/* line 21, ../sass/layout/_header.scss */
-header .logo span {
-  line-height: 36px;
+/* line 9, ../sass/layout/_header.scss */
+header h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
 }
 
 /* line 1, ../sass/landing/_hero.scss */
@@ -670,7 +657,7 @@ footer .social-networks li a:hover {
   box-sizing: border-box;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .container {
   max-width: 1170px;
   margin-left: auto;
@@ -685,7 +672,7 @@ footer .social-networks li a:hover {
   clear: both;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 img {
   max-width: 100%;
   height: auto;
